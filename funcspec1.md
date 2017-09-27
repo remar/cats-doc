@@ -58,6 +58,8 @@ Nongoals
 The first version of Cats will not support the following features,
 though many will be included in later versions:
 
+* More "dynamic" sprite definition with variable frame sizes
+* Frame offsets
 * Sprite metadata
 * Tile metadata
 * Read in a tilemap from a TMX file
@@ -95,3 +97,64 @@ be modified.
 
 Details
 -------
+
+### File formats
+
+The file formats are all based on JSON.
+
+#### Sprite file format
+
+A sprite will be specified in a JSON object, containing the key
+"animations". "animations" will point to an object containing the
+animations, with the keys used as animation names. The name of the
+JSON file will determine the sprites name, e.g. the filename
+"hero.json" means that the sprite will be called "hero".
+
+Each animation will be specified as an object, containing the keys
+"image", "looping" and "frames". "image" will contain an object
+describing the image path and frame dimensions. "looping" indicates
+whether this animation should loop or not. "frames" will contain a
+list of lists, where each such list points out an index into the image
+and a duration in milliseconds. A frame index of -1 indicates that the
+sprite will be hidden during the frames duration.
+
+Example sprite definition:
+
+<pre>
+{
+	"animations": {
+		"walk": {
+			"image": {
+                 "path":"path/to/walk.png",
+                 "width":32,
+                 "height":32
+             },
+             "looping": true,
+             "frames": [
+                 [0, 100], [1, 150], [2, 100], [1, 150]
+             ]
+         }
+	}
+}
+</pre>
+
+#### Tileset file format
+
+
+### Methods
+
+*   Init(width, height)
+
+	Creates a window for the application with the given width and
+    height.
+
+	width - integer, width in pixels of the draw area
+
+	height - integer, height in pixels of the draw area
+
+*   LoadSprite(file)
+
+	Loads in the provided sprite definition and makes it available to
+    the graphics engine.
+
+	file - string, path to the sprite definition file
