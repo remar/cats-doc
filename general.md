@@ -44,3 +44,5 @@ Would be nice to be able to use Tiled for making tile maps. Either
 support the "native" Tiled format or make an extension to Tiled.
 
 Tiles might have metadata, e.g. for collision detection.
+
+A tile may be empty.
