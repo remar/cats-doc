@@ -7,7 +7,10 @@ Project
 Cats - C# Abstraction for Tiles and Sprites. SDL2 2D general purpose
 graphics engine.
 
-This is version 1 of the specification.
+This is version 1 of the specification. The API, data structures and
+file formats should be regarded as a _work in progress_ and will
+probably change down the road. The implementation of this
+specification will be versioned as 0.1.
 
 
 Author
