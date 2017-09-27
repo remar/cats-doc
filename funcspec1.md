@@ -62,3 +62,33 @@ though many will be included in later versions:
 * Sprite flip (horizontal/vertical)
 * Tile layers (and layer info for sprites)
 * Tile flip (horizontal/vertical)
+
+
+Overview
+--------
+
+The detailed functional specification naturally consists of a list of
+methods and data structures that make up the API for the graphics
+engine, as this is what the user of the graphics engine sees and uses.
+
+In general, this is how the graphics engine will be used:
+
+### 1. Initialization
+
+This consists of creating the game window as well as setting up the
+renderer. Here is also where sprites and tilesets are loaded.
+
+### 2. Setup of backgrounds and sprite instances creation
+
+Set up the initial background and create sprite instances for the
+objects that will be visible from the start.
+
+### 3. Continous updating of sprite instances and tilemaps
+
+For each frame the sprite instances will probably be moved around, the
+background might be scrolled, and individual tiles in the tilemap may
+be modified.
+
+
+Details
+-------
