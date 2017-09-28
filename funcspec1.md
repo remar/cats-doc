@@ -277,3 +277,11 @@ Example tileset definition:
 	tile x - integer, x offset into the tileset
 
 	tile y - integer, y offset into the tileset
+
+*   SetScroll(x, y)
+
+	Set the scroll of the tile layer.
+
+	x - integer, x offset of the tile layer
+
+	y - integer, y offset of the tile layer
