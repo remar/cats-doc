@@ -190,11 +190,11 @@ Example tileset definition:
 
 	Set color to be used when clearing the screen prior to redrawing.
 
-	red - integer, red component, 0-255
+	red - byte, red component, 0-255
 
-	green - integer, green component, 0-255
+	green - byte, green component, 0-255
 
-	blue - integer, blue component, 0-255
+	blue - byte, blue component, 0-255
 
 *   LoadSprite(file)
 
