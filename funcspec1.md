@@ -180,9 +180,11 @@ Example tileset definition:
 
 	height - integer, height in pixels of the draw area
 
-*   Redraw()
+*   Redraw(delta)
 
 	Draw all the tiles and sprites. Called once each frame.
+
+	delta - float, seconds since previous call to redraw
 
 *   SetBackgroundColor(red, green, blue)
 
