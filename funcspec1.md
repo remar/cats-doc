@@ -71,6 +71,8 @@ though many will be included in later versions:
 * Tile map wrap around
 * Dynamic tile definitions (specify in the file where each tile is
   located in the graphics)
+* Camera
+
 
 Overview
 --------
