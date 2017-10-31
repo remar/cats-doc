@@ -1,5 +1,5 @@
-Cats - C# Abstraction for Tiles and Sprites
-===========================================
+Cats - C#/C++ Abstraction for Tiles and Sprites
+===============================================
 
 Cats is an abstraction for working with 2D graphics (tiles and
 sprites). This project contains the general documentation and actual

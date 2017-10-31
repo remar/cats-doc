@@ -4,7 +4,7 @@ Cats, functional specification #1
 Project
 -------
 
-Cats - C# Abstraction for Tiles and Sprites. General purpose 2D
+Cats - C#/C++ Abstraction for Tiles and Sprites. General purpose 2D
 graphics engine.
 
 This is version 1 of the specification. The API, data structures and
