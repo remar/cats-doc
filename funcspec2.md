@@ -92,9 +92,9 @@ The file formats are all based on JSON.
 
 #### Sprite file format extension
 
-An animation can now have an offset that will be added/(or subtracted?)
-from the images position when the animation is shown. This offset will be
-the same for all frames in the animation.
+An animation can now have an offset that will be subtracted from the images
+position when the image is rendered. This offset will be the same for all
+frames in the animation.
 
 Example sprite definition:
 
@@ -107,7 +107,7 @@ Example sprite definition:
                  "width":32,
                  "height":32
              },
-             "offset": [16, 16],
+             "offset": [4, 4],
              "looping": true,
              "frames": [
                  [0, 100], [1, 150], [2, 100], [1, 150]
