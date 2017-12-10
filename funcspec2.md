@@ -43,6 +43,7 @@ Goals
 These are the goals for Cats version 2:
 
 * Frame offsets for sprites
+* Animation pausing
 
 TODO: Add more features here as work on converting Retrobattle to Cats
 proceeds.
@@ -55,7 +56,6 @@ This version of Cats will not support the following features, though many
 will be included in later versions:
 
 * More "dynamic" sprite definition with variable frame sizes
-* Animation pausing
 * Sprite metadata
 * Tile metadata
 * Read in a tilemap from a TMX file
