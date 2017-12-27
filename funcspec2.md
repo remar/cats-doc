@@ -44,11 +44,12 @@ These are the goals for Cats version 2:
 
 * Frame offsets for sprites (origin)
 * Animation pausing
-* Text rendering
+* Pause all animations
 * Fullscreen toggle
-* Move sprite relative to current position
 * Toggle mouse pointer
 * Window title
+* Move sprite relative to current position
+* Text rendering
 
 
 Nongoals
@@ -118,4 +119,48 @@ Example sprite definition:
 	}
 }
 </pre>
+
+### Methods
+
+* PauseAnimation(id, on)
+
+  Set pause state of the provided sprite instance.
+
+	id - integer, id of a sprite instance
+
+  on - boolean, indicates whether animation should be paused or not
+
+* PauseAnimations(on)
+
+  Set pause state of all sprite instances.
+
+  on - boolean, indicates whether animations should be paused or not
+
+* SetFullscreen(on)
+
+  Set fullscreen mode.
+
+  on - boolean, indicates whether fullscreen mode should be on or off
+
+* ShowPointer(on)
+
+  Show or hide mouse pointer.
+
+  on - boolean, indicates whether the mouse pointer should be shown or not
+
+* SetWindowTitle(title)
+
+  Set the window title.
+
+  title - string, the window title
+
+* MoveSprite(id, delta x, delta y)
+
+  Move sprite relative to its current position.
+
+	id - integer, id of a sprite instance
+
+  delta x - the amount to move in the x axis
+
+  delta y - the amount to move in the y axis
 
