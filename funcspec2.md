@@ -42,11 +42,13 @@ Goals
 
 These are the goals for Cats version 2:
 
-* Frame offsets for sprites
+* Frame offsets for sprites (origin)
 * Animation pausing
-
-TODO: Add more features here as work on converting Retrobattle to Cats
-proceeds.
+* Text rendering
+* Fullscreen toggle
+* Move sprite relative to current position
+* Toggle mouse pointer
+* Window title
 
 
 Nongoals
@@ -107,7 +109,7 @@ Example sprite definition:
                  "width":32,
                  "height":32
              },
-             "offset": [4, 4],
+             "origin": [16, 16],
              "looping": true,
              "frames": [
                  [0, 100], [1, 150], [2, 100], [1, 150]
