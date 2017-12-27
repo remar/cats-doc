@@ -49,7 +49,7 @@ These are the goals for Cats version 2:
 * Toggle mouse pointer
 * Window title
 * Move sprite relative to current position
-* Text rendering
+* Monospace text rendering
 
 
 Nongoals
@@ -164,3 +164,24 @@ Example sprite definition:
 
   delta y - the amount to move in the y axis
 
+* LoadFont(file)
+
+  Loads a monospace font contained in the provided file.
+
+  file - string, path to font file
+
+* CreateText(font, text)
+
+  Creates a sprite and a sprite instance given the font and text, and
+    returns the sprite id.
+
+  font - string, name of the font (same as the file without the .json
+    suffix)
+
+  text - string, text to write
+
+* RemoveText(id)
+
+  Removes a text made with CreateText.
+
+  id - int, id of the text
