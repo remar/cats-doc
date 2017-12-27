@@ -24,8 +24,8 @@ Scenarios
 
 ### Scenario #1, Convert Retrobattle to use Cats++
 
-To be able to convert Retrobattle to use Cats, frame offsets for sprites
-must be added to Cats.
+To be able to convert Retrobattle to use Cats, various new features must be
+added.
 
 
 Current features
