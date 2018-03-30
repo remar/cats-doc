@@ -50,7 +50,10 @@ These are the goals for Cats version 2:
 * Window title
 * Move sprite relative to current position
 * Monospace text rendering
+* Init with a window size that differs from the logical screen size
 
+TODO! Redesign text rendering! No need to create dynamic
+sprites/animations etc...
 
 Nongoals
 --------
@@ -122,11 +125,22 @@ Example sprite definition:
 
 ### Methods
 
+* Init(width, height, multiplier = 1.0)
+
+  Creates a window for the application with the given width and
+  height. A multiplier can optionally be applied to the window size.
+
+  width - integer, width in pixels of the draw area
+
+  height - integer, height in pixels of the draw area
+
+  multiplier - float, multiplier applied to the window size
+
 * PauseAnimation(id, on)
 
   Set pause state of the provided sprite instance.
 
-	id - integer, id of a sprite instance
+  id - integer, id of a sprite instance
 
   on - boolean, indicates whether animation should be paused or not
 
@@ -158,7 +172,7 @@ Example sprite definition:
 
   Move sprite relative to its current position.
 
-	id - integer, id of a sprite instance
+  id - integer, id of a sprite instance
 
   delta x - the amount to move in the x axis
 
