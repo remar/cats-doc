@@ -120,6 +120,34 @@ Example sprite definition:
 }
 </pre>
 
+#### Font file format
+
+A font is specified in a JSON object, containing the keys "image" and
+"characters". The "image" object will provide the path to the fonts
+image, and width and height will specify each characters width and
+height. The "characters" object will map ASCII characters to offsets
+into the provided image.
+
+Example font definition:
+
+<pre>
+{
+	"image": {
+		"path":"path/to/text.png",
+		"width":16,
+		"height":16
+	},
+	"characters": {
+		"a": [0, 0],
+		"b": [1, 0],
+		"c": [2, 0],
+		"d": [3, 0],
+		"e": [4, 0],
+		"f": [5, 0]
+	}
+}
+</pre>
+
 ### Methods
 
 * Init(width, height, multiplier = 1.0)
