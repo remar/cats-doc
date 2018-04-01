@@ -52,9 +52,6 @@ These are the goals for Cats version 2:
 * Monospace text rendering
 * Init with a window size that differs from the logical screen size
 
-TODO! Redesign text rendering! No need to create dynamic
-sprites/animations etc...
-
 Nongoals
 --------
 
@@ -184,15 +181,36 @@ Example sprite definition:
 
   file - string, path to font file
 
-* CreateText(font, text)
+* CreateText(font, text) : id
 
-  Creates a sprite and a sprite instance given the font and text, and
-    returns the sprite id.
+  Creates a text instance given the font and text, and returns a text
+  id.
 
   font - string, name of the font (same as the file without the .json
     suffix)
 
   text - string, text to write
+
+  id - integer, return value, id used to indicate this text instance
+
+* SetTextPosition(id, x, y)
+
+  Set a text instances position in screen coordinates.
+
+  id - integer, id of a text instance
+
+  x - integer, x component of the position
+
+  y - integer, y component of the position
+
+* ShowText(id, on)
+
+  Show or hide a text instance.
+
+  id - integer, id of a text instance
+
+  show - boolean, indicate whether this text instance should be
+  visible or not
 
 * RemoveText(id)
 
