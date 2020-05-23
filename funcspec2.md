@@ -125,8 +125,18 @@ Example sprite definition:
 A font is specified in a JSON object, containing the keys "image" and
 "characters". The "image" object will provide the path to the fonts
 image, and width and height will specify each characters width and
-height. The "characters" object will map ASCII characters to offsets
-into the provided image.
+height. The "characters" string will map ASCII characters to offsets
+into the provided image. E.g. if the "characters" string has an "a" in
+the first position, the offset to "a" in the image is 0. The index
+will wrap around in the image if an edge is reached, e.g. a font image
+may look like this:
+
+<pre>
+ABCDEFGH
+IJKLMNOP
+QRSTUVWX
+YZ
+</pre>
 
 Example font definition:
 
@@ -137,14 +147,7 @@ Example font definition:
 		"width":16,
 		"height":16
 	},
-	"characters": {
-		"a": [0, 0],
-		"b": [1, 0],
-		"c": [2, 0],
-		"d": [3, 0],
-		"e": [4, 0],
-		"f": [5, 0]
-	}
+	"characters": "abcdefghijklmnopqrstuvwxyz"
 }
 </pre>
 
